@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Details</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+    <script src="http://localhost/index.js" type="module"></script>
+    <script>
+    //   $(document).ready(function () {
+
+    //     function handleRouting(){
+    //         var path=window.location.pathname;
+    //         switch(path){
+    //             case '/JQuery/Student_Details/index.html':
+    //                 //student name logic
+    //                 console.log("name page is printing")
+              
+    //                 break;
+    //             case '/userDetails':
+    //                 //user detail logic
+    //                 console.log("user details printed");
+    //                 break;
+    //             default:
+    //             $('#user_names').html('<p>404 - Page Not Found</p>');
+    //         }       
+    //     }
+    //     $.ajax({
+    //       url: "https://freetestapi.com/api/v1/students",
+    //       method: "GET",
+    //       headers: {
+    //         Accept: "application/json",
+    //       },
+    //       success: function (response) {
+    //         var users = response;
+            
+    //         users.forEach(function (user) {
+    //           $("#user_names").append(
+    //             `<li data-id="${user.id}">${user.name}</li>`
+    //           )
+    //           $("#back_button").hide();
+    //         });
+            
+                
+    //         // var compiledNameTemplate=_.template($('#name-template').html());
+            
+           
+    //         $("#user_names").on("click", "li", function () {
+    //           var userId = $(this).data("id");
+    //           var user = users.find((u) => u.id == userId);
+            
+
+    //           if (user) {
+    //                 history.pushState({ page: 'userDetails', userId: userId }, 'User Detail', '/userDetails');
+                    
+
+    //           $("#user_names").hide();
+    //           $("#user_details").show();
+    //           $("#back_button").show();
+
+    //           $("#user_details").html(`
+    //                         <p><strong>Name:</strong> ${user.name}</p>
+    //                         <p><strong>Age:</strong>${user.age}</p>
+    //                         <p><strong>Email:</strong> ${user.email}</p>
+    //                         <p><strong>City</strong> ${user.address.city}</p>
+    //                         <p><strong>Country</strong> ${user.address.country}</p>
+                           
+    //                     `);
+                        
+          
+    //           }
+    //         });
+    //         $("#back_button").on("click", function () {
+    //             history.pushState({ page: 'userNames' }, 'User names', '/JQuery/Student_Details/index.html');
+    //           $("#user_details").hide();
+    //           $("#back_button").hide();
+    //           $("#user_names").show();
+    //           handleRouting();
+              
+              
+    //         });
+    //       }
+    //     });
+    //   });
+    // </script>
+  </head>
+  <body>    
+  <!-- <div style="text-align:center;">
+
+
+    <div id="user_names">   
+      <h1>Show User Names </h1>
+    </div>
+    
+    <div id="user_details"></div>
+    
+    <button id="back_button">Back</button>
+</div> -->
+
+<div id="app"></div>
+</body>
+</html>
+
+
+
+
+
